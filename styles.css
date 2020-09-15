@@ -36,17 +36,32 @@ header{
 }
 
 nav{
+    position: relative;
+    display: flex;
     float: right;
     line-height: 100px;
 }
 
 nav a{
+    position: relative;
     text-decoration: none;
     font-family: bignoodletitling;
     letter-spacing: 4px;
     color: #fff;
     font-size: 20px;
     margin: 0 10px;
+}
+
+nav #page{
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background:yellow;
+    bottom: 35px;
+    transition: 0.5s;
+    border-radius: 5px;
+    
 }
 
 /* Banner */

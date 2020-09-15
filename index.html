@@ -18,12 +18,28 @@
                     <a href="">NavigationBar</a>
                 </div>
                 <nav>
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Portfolio</a>
-                    <a href="">Services</a>
-                    <a href="">Contact</a>
+                    <div id="page"></div>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
                 </nav>
+                <script type="text/javascript">
+                    var marker = document.querySelector("#page");
+                    var item = document.querySelectorAll("nav a");
+
+                    function indicator(e){
+                        page.style.left = e.offsetLeft+"px";
+                        page.style.width = e.offsetWidth+"px";
+                    }
+
+                    item.forEach(link => {
+                        link.addEventListener('click', (e) =>{
+                            indicator(e.target);
+                        })
+                    })
+                </script>
             </div>
         </header>
 
@@ -41,5 +57,7 @@
             </div>
         </div>
     </div>
+
+   
 </body>
 </html>
