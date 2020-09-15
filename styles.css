@@ -102,24 +102,29 @@ nav #page{
     border-color: black;
     color: red;
 }
-.content-area{
+
+/* Call to action section */
+.call-to-action{
+    display: flex;
+    align-items: center;
     width: 100%;
     position: relative;
     top: 550px;
     background: #ddd;
-    height: 1500px;
+    height: 250px;
 }
 
-.content-area h2{
+.call-to-action h2{
+    
     font-family: bignoodletitling;
-    padding-top: 30px;
+    
     letter-spacing: 4px;
     font-size: 40px;
     margin: 0;
 }
 
-.content-area p{
-    padding: 2% 0;
+.call-to-action p{
+    padding-top: 2%;
     font-family: merienda;
     line-height: 30px;
 }
