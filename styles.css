@@ -86,7 +86,6 @@ nav #page{
 }
 
 .banner-area a{
-    
     border-radius: 50px;
     padding:0.5rem;
     background: #fff;
@@ -104,6 +103,7 @@ nav #page{
 }
 
 /* Call to action section */
+
 .call-to-action{
     display: flex;
     align-items: center;
@@ -111,20 +111,87 @@ nav #page{
     position: relative;
     top: 550px;
     background: #ddd;
-    height: 250px;
+    padding: 20px 0px;
 }
 
 .call-to-action h2{
-    
+    padding-top: 10%;
     font-family: bignoodletitling;
-    
     letter-spacing: 4px;
     font-size: 40px;
-    margin: 0;
+    
 }
 
 .call-to-action p{
     padding-top: 2%;
+    padding-bottom: 10%;
     font-family: merienda;
     line-height: 30px;
 }
+
+/* Services */
+
+.services{
+    display: flex;
+    background-color: white;
+    position: relative;
+    top: 550px;
+    align-items: center;
+    padding: 90px 0px;
+    
+}
+
+.services .wrapper .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+        
+    
+}
+
+.services .wrapper .services-container .child{
+    width: 320px;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.services .wrapper .services-container .child:hover{
+    transform: translate(0, -7px);
+    box-shadow: 0 0 5px #ccc;
+    
+}
+
+.services .wrapper .services-container .child .child-element{
+    height: auto;
+    
+    padding: 25px;
+}
+
+
+
+.services .wrapper .services-container .child .icon{
+    width: 4rem;
+    height: auto;
+    padding-bottom: 8%;
+    
+}
+
+.services .wrapper .services-container .child h4{
+    margin: 25px 0 15px;
+    font-family: bignoodletitling;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.services .wrapper .services-container .child p{
+    line-height: 24px;
+    font-family: merienda;
+    font-size: 14px;
+}
+
