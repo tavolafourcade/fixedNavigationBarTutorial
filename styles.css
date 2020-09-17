@@ -156,7 +156,7 @@ h2{
 
 }
 
-.about-us .about-us-container .line{
+.line{
     width: 130px;
     border-top: 2px solid #222;
     margin: auto;
@@ -168,7 +168,7 @@ h2{
     letter-spacing: 0px;
 }
 
-.about-us .about-us-container .line .blocks{
+.line .blocks{
     position: relative;
     display: inline-block;
     width: 10px;
@@ -181,14 +181,18 @@ h2{
 
 /* Services */
 
-.services{
+.section{
     display: flex;
-    background-color: white;
+    
     position: relative;
     top: 550px;
     align-items: center;
     padding: 90px 0px;
     
+}
+
+.services{
+    background-color: white;
 }
 
 .services .wrapper .services-container{
@@ -244,4 +248,11 @@ h2{
     font-family: merienda;
     font-size: 14px;
 }
+/***********************/
+/*PRICING PLAN SECTION*/
+/***********************/
 
+/*Pricing plan*/
+.pricing-plan{
+    background-color: orange;
+}
