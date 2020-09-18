@@ -234,7 +234,7 @@ h2{
     
 }
 
-.services .wrapper .services-container .child h4{
+h4{
     margin: 25px 0 15px;
     font-family: bignoodletitling;
     letter-spacing: 2px;
@@ -243,7 +243,7 @@ h2{
     line-height: 24px;
 }
 
-.services .wrapper .services-container .child p{
+p{
     line-height: 24px;
     font-family: merienda;
     font-size: 14px;
@@ -299,7 +299,13 @@ h2{
 .pricing-plan-child-container{
     background: #fff;
     text-align: center;
+    transition: all 0.4s;
+
+    
 }
+
+
+
 
 ul{
     list-style: none;
@@ -315,4 +321,88 @@ ul li{
     margin-bottom: 15px;
     margin-left: auto;
     border-bottom: 1px solid #666;
+}
+
+ul li:last-child{
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.pricing-plan-child-container .pricing-plan-child-head{
+    padding: 15px;
+}
+
+.pricing-plan-child-container .pricing-plan-child-price{
+    padding: 15px;
+    background-color: #666666;
+    color: white;
+    transition: all 0.5 ease 0s;
+}
+
+.pricing-plan-child-container .pricing-plan-child-price h1{
+    position: relative;
+    padding-left: 15px;
+    display: inline-block;
+    font-size: 48px;
+}
+
+.pricing-plan-child-container .pricing-plan-child-price h1 span{
+    position: absolute;
+    font-size: 14px;
+    line-height: 40px;
+    left: 0;
+}
+
+.pricing-plan-child-container .pricing-plan-child-body{
+    padding: 25px 15px;
+}
+
+.pricing-plan-child-container .pricing-plan-child-body .order-now{
+    display: inline-block;
+    padding: 5px 35px;
+    margin-top: 20px;
+    border: 2px solid #666;
+    color: #666;
+    border-radius: 30px;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.pricing-plan-child-container:hover .pricing-plan-child-price{
+    background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+}
+
+.pricing-plan-child-container:hover .order-now{
+    background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    color: white;
+    
+}
+
+/*********************/
+/****MEDIA QUERIES****/
+/*********************/
+
+@media (max-width: 1025px){
+
+    .services .wrapper .services-container{
+        justify-content: center;
+        
+    }
+
+    .services .wrapper .services-container .child{
+        margin-top: 20px;
+    }
+
+    .pricing-plan-child-container{
+        margin-top: 40px;
+        
+    
+        
+    }
+    .pricing .wrapper .pricing-plan-second-container{
+        justify-content: center;
+    }
+    
 }
