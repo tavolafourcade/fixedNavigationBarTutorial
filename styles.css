@@ -253,6 +253,66 @@ h2{
 /***********************/
 
 /*Pricing plan*/
-.pricing-plan{
+.pricing{
     background-color: orange;
+}
+
+.pricing-plan{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.pricing .wrapper .pricing-plan .pricing-plan-first-container{
+    max-width: 400px;
+    margin: 0px auto 40px;
+}
+
+.pricing .wrapper .pricing-plan .pricing-plan-first-container h2{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.pricing .wrapper .pricing-plan .pricing-plan-first-container .pricing-plan-p{
+    font-family: merienda;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.pricing .wrapper .pricing-plan-second-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.pricing .wrapper .pricing-plan-second-container .pricing-plan-child{
+    width: 320px;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pricing-plan-child-container{
+    background: #fff;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    max-width: 204px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    margin: 0 auto 15px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+    border-bottom: 1px solid #666;
 }
