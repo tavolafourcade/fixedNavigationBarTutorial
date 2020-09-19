@@ -12,7 +12,7 @@ header{
     height: 100px;
     background: #262626;
     width: 100%;
-    z-index: 1;
+    z-index: 100;
     position: fixed; 
 }
 
@@ -71,9 +71,22 @@ nav #page{
     height: 450px;
     position: fixed;
     top: 100px;
-    background-image: url("https://images.unsplash.com/photo-1468276311594-df7cb65d8df6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background: url("./img/scott-graham-unsplash.jpg") no-repeat center;
     background-size: cover;
-    background-position: center;
+    
+}
+
+
+.banner-area::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    opacity: 0.85;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .banner-area h2{
@@ -82,24 +95,26 @@ nav #page{
     font-size: 50px;
     font-family: poppins;
     text-transform: uppercase;
+    color: white;
     
 }
 
 .banner-area a{
     border-radius: 50px;
-    padding:0.5rem;
+    padding: 5px 20px;
     background: #fff;
-    width: 180px;
-    transition-duration: 1s;
+    
+    transition-duration: 0.5s;
     cursor: pointer;
     border-color: #fff;
-    font-size: 18px;
+    font-size: 24px;
+    display: inline-block;
 }
 
 .banner-area a:hover{
-    background-color: black;
-    border-color: black;
-    color: red;
+    background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    color: white;
+    font-weight: 500;
 }
 
 /* Call to action section */
