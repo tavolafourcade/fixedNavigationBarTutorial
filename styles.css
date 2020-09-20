@@ -504,9 +504,7 @@ ul li:last-child{
     justify-content: center;
 }
 
-.owl-nav{
-    visibility: hidden;
-}
+
 /*********************/
 /****MEDIA QUERIES****/
 /*********************/
