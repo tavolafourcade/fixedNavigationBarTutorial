@@ -464,8 +464,10 @@ ul li:last-child{
  }
 
 .testimonial-body .testimonial-body-container .testimonial-img-container {
+    display: flex;
+    justify-content: center;
     padding: 30px 0;
-    margin: auto;
+    
  }
 
 .testimonial-body .testimonial-body-container .testimonial-img-container img{
@@ -487,11 +489,24 @@ ul li:last-child{
     
  }
 
+ .testimonial-body .testimonial-body-container .testimonial-description-container .testimonial-rating{
+    display: flex;
+    justify-content: center;
+}
+
  .testimonial-body .testimonial-body-container .testimonial-description-container .testimonial-rating img{
      width: 18px;
+
  }
 
+.active{
+    display: flex;
+    justify-content: center;
+}
 
+.owl-nav{
+    visibility: hidden;
+}
 /*********************/
 /****MEDIA QUERIES****/
 /*********************/
