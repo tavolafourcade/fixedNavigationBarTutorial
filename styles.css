@@ -505,11 +505,219 @@ ul li:last-child{
 }
 
 
+
+/***********************/
+/****COUNTER SECTION****/
+/***********************/
+
+.counter{
+    background: url("https://colorlib.com/preview/theme/prantokon/prantokon/assets/img/counter-bg.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+}
+
+.counter::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    opacity: 0.85;
+    z-index: -1;
+}
+
+.counter-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.counter .single-counter-box{
+    
+    padding: 25px;
+    
+}
+
+.counter .single-counter-box .icon{
+    background: #0861b5;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    padding: 20px;
+    border: 2px solid transparent;
+    box-shadow: 0 8px 8px #020202;
+}
+
+.counter .single-counter-box .icon:hover{
+    border: 2px solid #31e8ff;
+    transition: 1.5s;
+    
+}
+
+
+.counter .single-counter-box .icon path{
+    fill: transparent;
+    stroke-width: 15;
+    stroke: #31e8ff;
+
+}
+
+/* Heart SVG */
+.counter .single-counter-box .icon.heart path{
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+
+}
+
+.counter .single-counter-box .icon.heart:hover path{
+    animation: animate-heart 1s linear forwards;
+
+}
+
+
+/* Star SVG */
+.counter .single-counter-box .icon.star path{
+    stroke-dasharray: 1810;
+    stroke-dashoffset: 0;
+
+}
+
+.counter .single-counter-box .icon.star:hover path{
+    animation: animate-star 1s linear forwards;
+
+}
+
+/* Bugs SVG */
+.counter .single-counter-box .icon.bugs path{
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+
+}
+
+.counter .single-counter-box .icon.bugs:hover path{
+    animation: animate-bugs 1s linear forwards;
+
+}
+
+/* Life SVG */
+.counter .single-counter-box .icon.life path{
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+
+}
+
+.counter .single-counter-box .icon.life:hover path{
+    animation: animate-life 1s linear forwards;
+
+}
+
+
+.counter-container h1{
+    font-size: 48px;
+    margin: 25px 0px 10px 0px;
+    color: white;
+    font-weight: 700;
+}
+
+.counter-container p{
+    font-size: 18px;
+    line-height: normal;
+    color: white;
+    
+}
+
+
+
+
+@keyframes animate-heart{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 1560;
+    }
+    80%
+    {
+        stroke-dashoffset: 3120;
+    }
+    100%
+    {
+        stroke-dashoffset: 3120;
+        fill: #31e8ff;
+    }
+}
+
+@keyframes animate-star{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 1810;
+    }
+    80%
+    {
+        stroke-dashoffset: 3620;
+    }
+    100%
+    {
+        stroke-dashoffset: 3620;
+        fill: #31e8ff;
+    }
+}
+
+@keyframes animate-bugs{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 3000;
+    }
+    80%
+    {
+        stroke-dashoffset: 6000;
+    }
+    100%
+    {
+        stroke-dashoffset: 6000;
+        fill: #31e8ff;
+    }
+}
+
+@keyframes animate-life{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 3000;
+    }
+    80%
+    {
+        stroke-dashoffset: 6000;
+    }
+    100%
+    {
+        stroke-dashoffset: 6000;
+        fill: #31e8ff;
+    }
+}
+
 /*********************/
 /****MEDIA QUERIES****/
 /*********************/
 
-@media (max-width: 1025px){
+@media (max-width: 1281px){
 
     .services .wrapper .services-container{
         justify-content: center;
@@ -523,10 +731,12 @@ ul li:last-child{
     .pricing-plan-child-container{
         margin-top: 40px;
         
-    
-        
     }
     .pricing .wrapper .pricing-plan-second-container{
+        justify-content: space-around;
+    }
+
+    .counter-container{
         justify-content: center;
     }
     
