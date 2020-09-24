@@ -536,10 +536,8 @@ ul li:last-child{
     justify-content: space-between;
 }
 
-.counter .single-counter-box{
-    
-    padding: 25px;
-    
+.counter .single-counter-box {
+    padding: 25px
 }
 
 .counter .single-counter-box .icon{
@@ -629,6 +627,87 @@ ul li:last-child{
     color: white;
     
 }
+
+
+/*****************************/
+/****MEET THE TEAM SECTION****/
+/*****************************/
+
+.meet-the-team{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-color: white;
+}
+
+
+.team .team-container{
+    max-width: 400px;
+    margin: 0px auto 40px;
+}
+
+
+.team .team-container h2{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.team-second-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.team-second-container .team-card-container{
+    
+    box-shadow: 0 10px 20px -2px #000000;
+    margin: 20px auto;
+}
+
+
+.team-second-container .team-card-container .team-card img{
+    max-width: 250px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.team-second-container .team-card-container .team-card div{
+    padding: 20px 10px;
+}
+
+.team-second-container .team-card-container .team-card div h2{
+    font-size: 24px;
+}
+
+.team-second-container .team-card-container .team-card div h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Applying hover effect on each card */
+.team-second-container .team-card-container .team-card img:hover{
+    content: "";
+    background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    z-index: 900;
+    
+}
+
+
+/*********************/
+/******ANIMATIONS*****/
+/*********************/
 
 
 
