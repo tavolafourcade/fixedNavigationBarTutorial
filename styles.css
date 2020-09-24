@@ -662,47 +662,70 @@ ul li:last-child{
 
 
 .team-second-container .team-card-container{
-    
     box-shadow: 0 10px 20px -2px #000000;
     margin: 20px auto;
+    height: auto;
 }
 
-
-.team-second-container .team-card-container .team-card img{
-    max-width: 250px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+.team-second-container .team-card-container div:last-child{
+    padding: 30px 10px;
 }
 
-.team-second-container .team-card-container .team-card div{
-    padding: 20px 10px;
+.team-second-container .team-card-container .team-card-name h2{
+    font-size: 28px;
 }
 
-.team-second-container .team-card-container .team-card div h2{
-    font-size: 24px;
-}
-
-.team-second-container .team-card-container .team-card div h3{
-    font-size: 16px;
+.team-second-container .team-card-container .team-card-name h3{
+    font-size: 20px;
     font-weight: 400;
 }
 
-/* Applying hover effect on each card */
-.team-second-container .team-card-container .team-card img:hover{
+.team-card{
+    position: relative;
+    overflow: hidden;
+    background: #000529;
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s 0s;
+
+}
+
+.team-card img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.team-card::after{
     content: "";
+    position: absolute;
     background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.4s;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.team-card:hover::after, .team-card:focus::after{
+    animation: swipe 1s forwards;
+}
+
+/* Applying hover effect on each card */
+/* .team-card:hover::before{
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    transition: all 0.4s;
     position: absolute;
     opacity: 0.85;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateX(100%);
-    z-index: 900;
     
-}
+} */
+
 
 
 /*********************/
@@ -710,7 +733,12 @@ ul li:last-child{
 /*********************/
 
 
-
+@keyframes swipe{
+    100% {
+        transform:  translate(1em);
+        width: 110%;
+      }
+}
 
 @keyframes animate-heart{
     0%
