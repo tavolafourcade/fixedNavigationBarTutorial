@@ -667,7 +667,7 @@ ul li:last-child{
     height: auto;
 }
 
-.team-second-container .team-card-container div:last-child{
+.team-second-container .team-card-container .team-card-name{
     padding: 30px 10px;
 }
 
@@ -683,10 +683,7 @@ ul li:last-child{
 .team-card{
     position: relative;
     overflow: hidden;
-    background: #000529;
-    background-repeat: no-repeat;
-    background-size: 0 100%;
-    transition: background-size 1s 0s;
+    
 
 }
 
@@ -710,21 +707,62 @@ ul li:last-child{
 }
 
 .team-card:hover::after, .team-card:focus::after{
-    animation: swipe 1s forwards;
+    animation: swipe-left 1s forwards;
 }
 
-/* Applying hover effect on each card */
-/* .team-card:hover::before{
-    content: "";
+/* ICONS */
+
+
+.team-member-icon .display-table{
+    display: table;
+    height: 100%;
+    width: 100%;
+
+}
+
+.team-member-icon .display-table .display-tablecell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.team-member-icon a{
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    
+}
+
+.team-member-icon{
+    position: absolute;
     top: 0;
     right: 0;
-    width: 0;
     height: 100%;
-    transition: all 0.4s;
+    width: 100%;
+    left: -100%;
+    z-index: 900;
+    transform: translate(0px);
+}
+
+.team-card:hover .team-member-icon{
+    content: "";
     position: absolute;
-    opacity: 0.85;
+    transform: translate(100%);
+    transition: all 0.4s linear;
+    height: 100%;
+    width: 100%;
+}
+
+.team-member-icon a:hover{
     
-} */
+    border: 1px solid white;
+    transition: all 0.4s linear;
+}
+
+
+
+
 
 
 
@@ -733,12 +771,14 @@ ul li:last-child{
 /*********************/
 
 
-@keyframes swipe{
+@keyframes swipe-left{ /*blue card*/
     100% {
         transform:  translate(1em);
         width: 110%;
       }
 }
+
+
 
 @keyframes animate-heart{
     0%
