@@ -712,6 +712,17 @@ ul li:last-child{
 
 /* ICONS */
 
+.team-member-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    z-index: 900;
+    transform: translate(0px);
+    
+}
 
 .team-member-icon .display-table{
     display: table;
@@ -731,19 +742,11 @@ ul li:last-child{
     height: 30px;
     display: inline-block;
     line-height: 30px;
-    
+    text-decoration: none;
+    margin: 0 5px;
 }
 
-.team-member-icon{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    left: -100%;
-    z-index: 900;
-    transform: translate(0px);
-}
+
 
 .team-card:hover .team-member-icon{
     content: "";
