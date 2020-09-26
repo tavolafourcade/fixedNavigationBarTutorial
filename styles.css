@@ -807,18 +807,41 @@ ul li:last-child{
     display: flex;
     justify-content: left;
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
+.contact-form form{
+    text-align: left;
+}
 
 .contact-form form input, .contact-form form textarea{
     width: 100%;
     border: 1px solid #bbb;
     padding: 5px 10px;
     margin-bottom: 15px;
+    line-height: 24px;
 }
 
+.contact-form form textarea{
+    line-height: 40px;
+}
+
+.contact-form form button{
+    border: 1px solid #bbb;
+    background: transparent;
+    width: auto;
+    color: #666;
+    padding: 4px 15px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    font-size: 18px;
+}
+
+.contact-form form button:hover{
+    background: #0861b5;
+    color: white;
+}
 /*********************/
 /******ANIMATIONS*****/
 /*********************/
