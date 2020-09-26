@@ -812,8 +812,11 @@ ul li:last-child{
 }
 
 
-.contact-form form{
+.contact-form form input, .contact-form form textarea{
     width: 100%;
+    border: 1px solid #bbb;
+    padding: 5px 10px;
+    margin-bottom: 15px;
 }
 
 /*********************/
