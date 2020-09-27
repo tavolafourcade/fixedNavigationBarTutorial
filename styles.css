@@ -10,7 +10,7 @@ body{
 
 header{
     height: 100px;
-    background: #262626;
+    background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
     width: 100%;
     z-index: 100;
     position: fixed; 
@@ -19,6 +19,10 @@ header{
 .wrapper{
     width: 80%;
     margin: 0 auto;
+}
+
+#header-wrapper{
+    width: 90%;
 }
 
 .logo{
@@ -167,54 +171,9 @@ nav #page{
 
 
 
-@media (max-width: 767px){
 
-    .first-section{
-        padding: 50px 0px 0px 0px;
-    }
 
-    .first-section .wrapper{
-        width: 90%;
-    }
 
-    .banner-area h2{
-        margin-bottom: 1rem;
-        width: 100%;
-        line-height: 1.2;
-        font-size: 24px;
-    }
-
-    .banner-area p{
-        margin-bottom: 1rem;
-        font-size: 12px;
-    }
-
-    .banner-area a{
-        width: 40%;
-        font-size: 16px;
-        padding: 5px 10px;
-    }
-
-    .banner-area-container{
-        flex-direction: column;
-    }
-
-    .banner-area-container .left-side{
-        width: 100%;
-    }
-
-    .banner-area-container .right-side{
-        width: 100%;
-        height: auto;
-        justify-content: flex-end;
-    }
-
-    .banner-area-container .right-side img{
-        width: 80%;
-        height: auto;
-        margin-top: -60px;
-    }
-}
 /* Call to action section */
 
 .call-to-action{
@@ -1102,7 +1061,9 @@ ul li:last-child{
 /****MEDIA QUERIES****/
 /*********************/
 
-@media (max-width: 1025px){
+
+@media (max-width: 1024px){
+
     .wrapper label{
         display: block;
         float: right;
@@ -1137,7 +1098,69 @@ ul li:last-child{
         
         display: block;
     }
+
+    #section-responsive{
+        top: 1024px;
+    }
+    
+    .first-section{
+        padding: 50px 0px 0px 0px;
+    }
+
+    .first-section .wrapper{
+        width: 90%;
+    }
+
+    .banner-area h2{
+        margin-bottom: 1rem;
+        width: 100%;
+        line-height: 1.2;
+        font-size: 24px;
+    }
+
+    .banner-area p{
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+
+    .banner-area a{
+        width: 120px;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .banner-area-container{
+        flex-direction: column;
+    }
+
+    .banner-area-container .left-side{
+        width: 100%;
+        padding-bottom: 0px;
+        margin-bottom: 40px;
+    }
+
+    .banner-area-container .right-side{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: flex-end;
+        
+    }
+
+    .banner-area-container .right-side img{
+        width: 80%;
+        height: auto;
+        
+    }
 }
+
+@media (min-width: 1024px) and (max-width: 1600px){
+    .banner-area-container .right-side img{
+        width: auto;
+    }
+}
+
+
 @media (max-width: 1281px){
 
     .services .wrapper .services-container{
