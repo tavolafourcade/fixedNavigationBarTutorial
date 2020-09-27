@@ -801,7 +801,7 @@ ul li:last-child{
     background: #fff;
     width: 35%;
     padding: 40px 60px;
-    margin-bottom: 40px;
+    
 }
 
 .contact-form h3{
@@ -889,6 +889,20 @@ ul li:last-child{
 
 .address-info ul li div i:hover{
     background: #0074da;
+    color: white;
+}
+
+/******FOOTER*****/
+.footer{
+    margin-top: 50px;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+.footer a{
+    text-decoration: none;
     color: white;
 }
 
@@ -1024,13 +1038,17 @@ ul li:last-child{
         font-size: 12px;
     }
 
-    .right-container{
-        margin-bottom: 0px;
+    .left-container{
+        margin-bottom: 40px;
     }
     .address-info ul li div i{
         line-height: 30px;
         width: 30px;
         height: 30px;
+    }
+
+    .contact-form h3, .address h3{
+        font-size: 25px;
     }
 
     .contact-address-info{
