@@ -21,14 +21,17 @@
         <header>
             <div class="wrapper">
                 <div class="logo">
-                    <a href="">NavigationBar</a>
+                    <a href="">helloWorld</a>
                 </div>
+                <label for="toggle">&#9776</label>
+                <input type="checkbox" id="toggle">
                 <nav>
                     <div id="page"></div>
                     <a href="#">Home</a>
                     <a href="#">About</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Services</a>
+                    <a href="#">Prices</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Team</a>
                     <a href="#">Contact</a>
                 </nav>
                 <script type="text/javascript">
@@ -41,18 +44,37 @@
                     }
 
                     item.forEach(link => {
-                        link.addEventListener('click', (e) =>{
+                        link.addEventListener('mouseenter', (e) =>{
                             indicator(e.target);
                         })
+
+                        
                     })
                 </script>
             </div>
         </header>
 
         <!--BANNER-->
-        <section class="banner-area">
-            <h2>Welcome!</h2>
-            <a>Tell me more</a>
+        <section class="first-section banner-area">
+            <div class="wrapper">
+                <div class="banner-area-container">
+                    <div class="left-side">
+                        <h2>Growth your skills with the help of a mentor!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </p>
+                        <a>Tell me more</a>
+                    </div>
+    
+                    <div class="right-side">
+                        <img src="./img/banner.png" alt="Mentoring">
+                    </div>
+                </div>
+                
+            </div>
+            
+            
         </section>
 
         <!--CALL TO ACTION-->

@@ -22,9 +22,10 @@ header{
 }
 
 .logo{
-    width: 30%;
+    width: 20%;
     float: left;
     line-height: 100px;
+    height: 100px;
 }
 
 .logo a{
@@ -35,11 +36,25 @@ header{
     letter-spacing: 5px;
 }
 
+.wrapper label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 100px;
+    color: white;
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
 nav{
     position: relative;
     display: flex;
     float: right;
     line-height: 100px;
+    
+    
 }
 
 nav a{
@@ -66,9 +81,12 @@ nav #page{
 
 /* Banner */
 
+.first-section{
+    padding: 90px 0px 0px 0px;
+}
 .banner-area{
     width: 100%;
-    height: 450px;
+    height: auto;
     position: fixed;
     top: 100px;
     background: url("./img/scott-graham-unsplash.jpg") no-repeat center;
@@ -89,26 +107,38 @@ nav #page{
     height: 100%;
 }
 
+.banner-area-container{
+    display: flex;
+}
+
 .banner-area h2{
-    padding-top: 9%;
-    margin-bottom: 4%;
+    width: 80%;
+    margin-bottom: 2rem;
     font-size: 50px;
     font-family: poppins;
-    text-transform: uppercase;
+    font-size: 25px;
     color: white;
-    
+    text-align: left;
+    line-height: 1.6;
+}
+
+.banner-area p{
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .banner-area a{
     border-radius: 50px;
     padding: 5px 20px;
-    background: #fff;
-    
+    color: white;
     transition-duration: 0.5s;
     cursor: pointer;
-    border-color: #fff;
-    font-size: 24px;
+    border: 2px solid white;
+    font-size: 20px;
     display: inline-block;
+    width: 30%;
 }
 
 .banner-area a:hover{
@@ -117,14 +147,82 @@ nav #page{
     font-weight: 500;
 }
 
+.banner-area-container .left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-bottom: 90px;
+}
+
+.banner-area-container .right-side{
+    width: 50%;
+    height: 488px;
+}
+
+.banner-area-container .right-side img{
+    width: 80%;
+    height: 488px;
+}
+
+
+
+@media (max-width: 767px){
+
+    .first-section{
+        padding: 50px 0px 0px 0px;
+    }
+
+    .first-section .wrapper{
+        width: 90%;
+    }
+
+    .banner-area h2{
+        margin-bottom: 1rem;
+        width: 100%;
+        line-height: 1.2;
+        font-size: 24px;
+    }
+
+    .banner-area p{
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+
+    .banner-area a{
+        width: 40%;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .banner-area-container{
+        flex-direction: column;
+    }
+
+    .banner-area-container .left-side{
+        width: 100%;
+    }
+
+    .banner-area-container .right-side{
+        width: 100%;
+        height: auto;
+        justify-content: flex-end;
+    }
+
+    .banner-area-container .right-side img{
+        width: 80%;
+        height: auto;
+        margin-top: -60px;
+    }
+}
 /* Call to action section */
 
 .call-to-action{
-    display: flex;
+    display: none;
     align-items: center;
     width: 100%;
     position: relative;
-    top: 550px;
+    top: 730px;
     background: #ddd;
     padding: 90px 0px;
 }
@@ -199,7 +297,7 @@ h2{
 .section{
     display: flex;
     position: relative;
-    top: 550px;
+    top: 730px;
     align-items: center;
     padding: 90px 0px;
     
@@ -1004,6 +1102,42 @@ ul li:last-child{
 /****MEDIA QUERIES****/
 /*********************/
 
+@media (max-width: 1025px){
+    .wrapper label{
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    
+   
+
+    nav{
+        display: none;
+        text-align: center;
+        width: 100%;
+        line-height: 50px;
+        background: #0861b5;
+    }
+
+    nav div{
+        display: none;
+    }
+
+    nav a{
+        display: block;
+        margin: 0;
+        
+        
+    }
+    .wrapper label{
+        margin-right: 0;
+    }
+
+    #toggle:checked + nav{
+        
+        display: block;
+    }
+}
 @media (max-width: 1281px){
 
     .services .wrapper .services-container{
