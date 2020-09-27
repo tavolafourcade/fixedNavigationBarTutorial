@@ -665,6 +665,7 @@ ul li:last-child{
     box-shadow: 0 10px 20px -2px #000000;
     margin: 20px auto;
     height: auto;
+    width: 280px;
 }
 
 .team-second-container .team-card-container .team-card-name{
@@ -842,6 +843,55 @@ ul li:last-child{
     background: #0861b5;
     color: white;
 }
+
+
+/*Address*/
+
+.address{
+    text-align: left;
+}
+
+.address h3{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.address-info{
+    display: flex;
+    margin-top: 40px;
+}
+
+.address-info ul li{
+    display: flex;
+    border: none;
+}
+
+.address-info ul li div i{
+    border: 2px #0074da solid;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    color: #666666;
+    transition: all 0.4s;
+}
+
+.contact-address-info{
+    line-height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.address-info ul li div i:hover{
+    background: #0074da;
+    color: white;
+}
+
 /*********************/
 /******ANIMATIONS*****/
 /*********************/
@@ -961,6 +1011,31 @@ ul li:last-child{
 
     .counter-container{
         justify-content: center;
+    }
+
+
+    .container-contact-sm{
+        width: auto;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+
+    .container-contact-sm p{
+        font-size: 12px;
+    }
+
+    .right-container{
+        margin-bottom: 0px;
+    }
+    .address-info ul li div i{
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-address-info{
+        line-height: 30px;
+        font-size: 12px;
     }
     
 }
